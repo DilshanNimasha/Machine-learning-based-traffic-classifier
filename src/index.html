@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Web Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Web Application</h1>
+    </header>
+
+    <main>
+        <section id="predictionSection">
+            <h2>Prediction</h2>
+
+            <form id="predictionForm">
+                <label for="inputData">Upload Network Traffic File:</label>
+                <input type="file" id="inputData" name="inputData" required accept=".pcap, .pcapng">
+
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+
+        <section id="resultSection">
+            <h2>Results</h2>
+            <div id="resultContainer">
+                <p id="predictionResult"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Web Application. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
